@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Camera to PDF</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>OCR Camera to PDF</h1>
+  <video id="video" width="320" height="240" autoplay></video>
+  <button id="snap">Take Picture</button>
+  <input type="file" id="upload" accept="image/*">
+  <canvas id="canvas" width="320" height="240"></canvas>
+  <button id="generatePdf">Generate PDF</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

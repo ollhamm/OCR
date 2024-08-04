@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Test Results Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #66b2ff; /* Softer blue color */
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            flex: 1 1 120px; /* Flex-grow, flex-shrink, and flex-basis */
+            max-width: 150px; /* Maximum width of individual cards */
+        }
+        .card .label {
+            font-weight: bold;
+            font-size: 16px; /* Larger font size for labels */
+            margin-bottom: 5px;
+        }
+        .card .value {
+            color: #fff; /* Make sure text color is white for better readability */
+            font-size: 20px; /* Larger font size for values */
+            font-weight: bold; /* Make text bold */
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .card {
+                width: calc(100% / 2 - 10px); /* Two cards per row */
+                max-width: none; /* Remove max-width constraint */
+                box-sizing: border-box; /* Ensure padding is included in width calculation */
+                font-size: 14px; /* Adjust font size for mobile */
+            }
+            .card .label {
+                font-size: 20px;
+                line-height: 1.3;
+            }
+            .card .value {
+                font-size: 20px;
+                line-height: 1.3; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">Hct</div>
+        <div class="value">42.0</div>
+    </div>
+    <div class="card">
+        <div class="label">RBCs</div>
+        <div class="value">49.8</div>
+    </div>
+    <div class="card">
+        <div class="label">Plt</div>
+        <div class="value">25.0</div>
+    </div>
+    <div class="card">
+        <div class="label">WBCs</div>
+        <div class="value">6.2</div>
+    </div>
+    <div class="card">
+        <div class="label">Neutrophils</div>
+        <div class="value">60</div>
+    </div>
+    <div class="card">
+        <div class="label">Segs</div>
+        <div class="value">50</div>
+    </div>
+    <div class="card">
+        <div class="label">Bands</div>
+        <div class="value">10</div>
+    </div>
+    <div class="card">
+        <div class="label">Lymphocytes</div>
+        <div class="value">30</div>
+    </div>
+    <div class="card">
+        <div class="label">Monocytes</div>
+        <div class="value">6</div>
+    </div>
+    <div class="card">
+        <div class="label">Eosinophils</div>
+        <div class="value">3</div>
+    </div>
+    <div class="card">
+        <div class="label">Basophils</div>
+        <div class="value">1</div>
+    </div>
+    <div class="card">
+        <div class="label">ESR</div>
+        <div class="value">15</div>
+    </div>
+    <div class="card">
+        <div class="label">Fe</div>
+        <div class="value">85</div>
+    </div>
+    <div class="card">
+        <div class="label">Fe Sat</div>
+        <div class="value">25</div>
+    </div>
+    <div class="card">
+        <div class="label">FDP</div>
+        <div class="value">5</div>
+    </div>
+    <div class="card">
+        <div class="label">Ferritin</div>
+        <div class="value">200</div>
+    </div>
+    <div class="card">
+        <div class="label">Fibrinogen</div>
+        <div class="value">350</div>
+    </div>
+    <div class="card">
+        <div class="label">Haptoglobin</div>
+        <div class="value">150</div>
+    </div>
+    <div class="card">
+        <div class="label">Hgb</div>
+        <div class="value">13.5</div>
+    </div>
+    <div class="card">
+        <div class="label">MCH</div>
+        <div class="value">29</div>
+    </div>
+    <div class="card">
+        <div class="label">MCHC</div>
+        <div class="value">33</div>
+    </div>
+    <div class="card">
+        <div class="label">MCV</div>
+        <div class="value">85</div>
+    </div>
+    <div class="card">
+        <div class="label">PT</div>
+        <div class="value">12.5</div>
+    </div>
+    <div class="card">
+        <div class="label">aPTT</div>
+        <div class="value">30</div>
+    </div>
+    <div class="card">
+        <div class="label">Reticulocytes</div>
+        <div class="value">1.5</div>
+    </div>
+    <div class="card">
+        <div class="label">TIBC</div>
+        <div class="value">300</div>
+    </div>
+    <div class="card">
+        <div class="label">Transferrin</div>
+        <div class="value">200</div>
+    </div>
+</body>
+</html>
